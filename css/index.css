@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #000;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero2 {
+    height: 100vh;
+    background: url('https://www.viggosmarthotel.com/images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content2 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.hero2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero2 p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+
+.btn {
+    background-color: #00c896;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #009f78;
+}
+
+.features {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    filter: hue-rotate(220deg) brightness(1.1);
+}
+
+.feature-item p {
+    color: #3366ff;
+    font-weight: 500;
+}
+
+.info-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.info-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.info-block img {
+    flex: 1 1 400px;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.info-text {
+    flex: 1 1 400px;
+}
+
+.info-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.info-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.link {
+    color: #3366ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-placeholder {
+    flex: 1 1 400px;
+    max-width: 500px;
+    height: 300px;
+    background-color: #ccc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.hero-section {
+    background-image: url('img/fondo.png');
+    /* Cambia esta ruta */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* oscurece para contraste */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.hero-text {
+    max-width: 55%;
+}
+
+.hero-text h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.hero-card {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.hero-card p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.hero-button {
+    background-color: #3b82f6;
+    /* azul */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .info-block {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .info-block img {
+        max-width: 100%;
+    }
+}
