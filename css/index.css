@@ -259,6 +259,14 @@ body {
     transition: background-color 0.3s;
 }
 
+.footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+
 
 
 @media screen and (max-width: 768px) {
