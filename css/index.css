@@ -61,7 +61,7 @@ body {
 
 .hero-content2 {
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #012E67;
     padding: 40px;
     border-radius: 12px;
 }
@@ -144,7 +144,7 @@ body {
 }
 
 .info-block img {
-    flex: 1 1 400px;
+    flex: 1 1 750px;
     max-width: 500px;
     border-radius: 8px;
 }
@@ -164,6 +164,7 @@ body {
     line-height: 1.6;
     color: #333;
     margin-bottom: 10px;
+    margin-left: -161px;
 }
 
 .link {
@@ -266,6 +267,50 @@ body {
     color: #fff;
 }
 
+.hero-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon-item {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.streaming-logos {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.streaming-logos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.streaming-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.streaming-grid img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.streaming-grid img:hover {
+    transform: scale(1.05);
+}
 
 
 
