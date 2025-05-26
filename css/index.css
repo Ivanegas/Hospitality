@@ -131,7 +131,7 @@ body {
 }
 
 .info-section {
-    padding: 60px 20px;
+    padding: 100px 20px;
     background-color: #f9f9f9;
 }
 
@@ -164,7 +164,8 @@ body {
     line-height: 1.6;
     color: #333;
     margin-bottom: 10px;
-    margin-left: -161px;
+    /* margin-left: -161px; */
+    text-align: justify;
 }
 
 .link {
