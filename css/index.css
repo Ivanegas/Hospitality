@@ -24,11 +24,14 @@ body {
 .container {
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    /* importante para móviles */
 }
+
 
 .logo {
     font-size: 24px;
@@ -313,9 +316,38 @@ body {
     transform: scale(1.05);
 }
 
+/* ========= RESPONSIVE DESIGN ========= */
 
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
-@media screen and (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-text,
+    .hero-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
     .info-block {
         flex-direction: column !important;
         text-align: center;
@@ -323,5 +355,101 @@ body {
 
     .info-block img {
         max-width: 100%;
+        height: auto;
+    }
+
+    .streaming-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .streaming-grid img {
+        width: 80%;
+        max-width: 220px;
+    }
+
+    .hero2 h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero2 p {
+        font-size: 1rem;
+    }
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+
+}
+
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+    .info-block {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .info-block img {
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .nav {
+        position: absolute;
+        top: 70px;
+        /* justo debajo del header */
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        transition: max-height 0.3s ease-in-out;
+        overflow: hidden;
+        z-index: 1000;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
