@@ -9,6 +9,7 @@ body {
     line-height: 1.6;
     background-color: #fff;
     color: #333;
+
 }
 
 /* Header */
@@ -54,17 +55,23 @@ body {
 /* Hero Section */
 .hero2 {
     height: 100vh;
-    background: url('https://www.viggosmarthotel.com/images/hero-bg.jpg') no-repeat center center/cover;
+    background-image: url('../assets/img/test.jpg');
+    /* ← reemplaza esta ruta si es necesario */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    position: relative;
 }
 
 .hero-content2 {
-    color: #fff;
-    background-color: #012E67;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* fondo oscuro semitransparente para contraste */
     padding: 40px;
     border-radius: 12px;
 }
@@ -147,8 +154,10 @@ body {
 }
 
 .info-block img {
-    flex: 1 1 750px;
+    flex: 1 1 auto;
+    width: 100%;
     max-width: 500px;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -414,7 +423,13 @@ body {
     }
 
     .info-block img {
-        max-width: 100%;
+        flex: 1 1 750px;
+        max-width: 500px;
+        border-radius: 8px;
+    }
+
+    .info-text {
+        text-align: center;
     }
 
     .hamburger {
