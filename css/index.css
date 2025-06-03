@@ -89,7 +89,7 @@ body {
 
 
 .btn {
-    background-color: #00c896;
+    background-color: #3A7D9A;
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
@@ -99,7 +99,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #009f78;
+    background-color: #3A7D9A;
 }
 
 .features {
@@ -384,6 +384,14 @@ body {
     .hero2 p {
         font-size: 1rem;
     }
+
+    .hero-overlay {
+        margin-bottom: 10px;
+    }
+
+    .hero-overlay .hero-card {
+        display: none;
+    }
 }
 
 .header-flex {
@@ -422,10 +430,12 @@ body {
         text-align: center;
     }
 
-    .info-block img {
-        flex: 1 1 750px;
-        max-width: 500px;
-        border-radius: 8px;
+    /* Pero muestra solo la que tiene esta clase */
+    .info-block .responsive-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     .info-text {
