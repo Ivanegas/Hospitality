@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
 // Logica para mostrar el menu de navegación en pantallas pequeñas
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
