@@ -70,7 +70,7 @@ body {
 
 .hero-content2 {
     color: white;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(66, 107, 178, 0.6);
     /* fondo oscuro semitransparente para contraste */
     padding: 40px;
     border-radius: 12px;
@@ -89,7 +89,7 @@ body {
 
 
 .btn {
-    background-color: #3A7D9A;
+    background-color: #48e6b7;
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
@@ -99,7 +99,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #3A7D9A;
+    background-color: #48e6b7;
 }
 
 .features {
