@@ -36,8 +36,8 @@
     <!-- HERO -->
     <section class="hero2">
         <div class="hero-content2">
-            <h1>Soluciones Inteligentes para la Industria Hotelera</h1>
-            <p>Moderniza cada rincón del hotel con tecnología de última generación, conectividad y eficiencia.</p>
+            <h1>Soluciones Inteligentes para <br> la Industria Hotelera</h1>
+            <p>Moderniza cada rincón del hotel con tecnología <br> de última generación, conectividad y eficiencia.</p>
             <a href="#soluciones" class="btn">Explorar soluciones</a>
         </div>
     </section>
@@ -74,7 +74,25 @@
                 <h3>Un Ecosistema Interconectado</h3>
                 <p>Nuestras soluciones están diseñadas para trabajar en conjunto, integrando TV, domótica, conectividad,
                     comunicación y automatización en una única plataforma.</p>
-                <a href="#" class="link">Solicitar demostración</a>
+                <!-- BOTÓN DE ACCIÓN -->
+                <button class="btn" id="openModal">Solicitar demostración</button>
+
+                <!-- MODAL OCULTO -->
+                <div id="demoModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h3>Solicita una demostración</h3>
+                        <form class="demo-form" action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST">
+                            <input type="text" name="nombre" placeholder="Nombre completo" required />
+                            <input type="email" name="correo" placeholder="Correo electrónico" required />
+                            <input type="text" name="empresa" placeholder="Nombre del hotel o empresa" />
+                            <textarea name="mensaje" rows="4"
+                                placeholder="Mensaje o requerimiento adicional..."></textarea>
+                            <button type="submit" class="btn">Enviar solicitud</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
