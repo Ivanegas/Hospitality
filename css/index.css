@@ -66,6 +66,7 @@ body {
     text-align: center;
     padding: 0 20px;
     position: relative;
+    text-justify: justify;
 }
 
 .hero-content2 {
@@ -159,6 +160,7 @@ body {
     max-width: 500px;
     height: auto;
     border-radius: 8px;
+    margin-left: 40px;
 }
 
 .info-text {
@@ -176,7 +178,6 @@ body {
     line-height: 1.6;
     color: #333;
     margin-bottom: 10px;
-    /* margin-left: -161px; */
     text-align: justify;
 }
 
@@ -398,6 +399,7 @@ body {
     .info-block img {
         max-width: 100%;
         height: auto;
+        margin-left: 0;
     }
 
     .streaming-grid {
@@ -424,6 +426,10 @@ body {
 
     .hero-overlay .hero-card {
         display: none;
+    }
+
+    .demo-form {
+        max-width: 500px;
     }
 }
 
@@ -543,4 +549,62 @@ body {
     .info-block p {
         text-align: center;
     }
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor del contenido */
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón de cerrar */
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Formulario dentro del modal */
+.demo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.demo-form input,
+.demo-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;
+}
+
+.demo-form textarea {
+    resize: vertical;
 }
